@@ -6,6 +6,7 @@ app.MapGet("/", () => "Hello Pandula Goonetilleke, Welcome to the RND Playground
 RND_Playground_Apps.Projects.ValueTypeAndReferenceType.Main();
 RND_Playground_Apps.Projects.Generics.Main();
 RND_Playground_Apps.Projects.Reflection.Main();
+RND_Playground_Apps.Projects.EVALExpression.Main();
 
 app.Run();
 
