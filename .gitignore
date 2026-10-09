@@ -9,6 +9,9 @@
 *.userosscache
 *.sln.docstates
 
+#python
+.venv/
+
 # VS Code
 .vscode/
 
