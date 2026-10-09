@@ -18,7 +18,7 @@ Build a small **Employee Helpdesk Agent** that touches the main parts of a real 
 Example questions the agent should handle:
 
 - "Raise an IT ticket for my laptop"
-- "How many leave days does ravi have?"
+- "How many leave days does Pandula have?"
 - "What is the remote work policy?"
 
 ---
@@ -207,7 +207,7 @@ Rules of thumb:
 
 ## Test questions for Step 2
 
-1. "How many leave days does ravi have?" (should call `get_leave_balance`)
+1. "How many leave days does Pandula have?" (should call `get_leave_balance`)
 2. "What is the remote work policy?" (should call `search_policy`)
-3. "Apply 3 days leave for nimal, and raise a ticket that his laptop is slow." (two tools in one request)
-4. "Apply 10 days leave for nimal." (the tool should refuse: not enough balance)
+3. "Apply 3 days leave for Erandi, and raise a ticket that his laptop is slow." (two tools in one request)
+4. "Apply 10 days leave for Erandi." (the tool should refuse: not enough balance)

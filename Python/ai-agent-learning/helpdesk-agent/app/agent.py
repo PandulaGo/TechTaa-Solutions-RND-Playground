@@ -41,7 +41,7 @@ async def main():
 
     print("4. Running the agent...")
     agent = create_agent(llm, tools)
-    q = "My laptop screen is flickering. I am user ravi. Please raise a ticket."
+    q = "My laptop keyboard is not working. I am user Pandula. Please raise a ticket."
     result = await agent.ainvoke({"messages": [("user", q)]})
     for m in result["messages"]:
         print(f"[{m.type}] {m.content}")

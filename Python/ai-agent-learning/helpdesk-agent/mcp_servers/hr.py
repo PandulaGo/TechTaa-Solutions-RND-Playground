@@ -3,8 +3,8 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("hr")
 
 LEAVE = {
-    "ravi":  {"annual": 14, "sick": 7},
-    "nimal": {"annual": 3,  "sick": 5},
+    "Pandula":  {"annual": 14, "sick": 7},
+    "Erandi": {"annual": 3,  "sick": 5},
 }
 
 
