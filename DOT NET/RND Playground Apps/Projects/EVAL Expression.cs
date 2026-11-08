@@ -39,7 +39,6 @@ namespace RND_Playground_Apps.Projects
             var result1 = Eval.Execute<int>(expression);
             ValidateExpression(expression);
             Console.WriteLine($"Result of {expression}':' {result1}");
-            Console.WriteLine($"===================================================================");
         }
 
         public static void EvaluateExpression3()
@@ -50,7 +49,6 @@ namespace RND_Playground_Apps.Projects
             var result = Eval.Execute<int>(expression, new {x});
             ValidateExpression(expression, new {x});
             Console.WriteLine($"Result of {expression} with x={x}: {result}");
-            Console.WriteLine($"===================================================================");
         }
 
         public static void EvaluateExpression4()
@@ -63,7 +61,6 @@ namespace RND_Playground_Apps.Projects
             var result3 = Eval.Execute<int>(expression3, new { a, b });
             ValidateExpression(expression3);	
             Console.WriteLine($"Result of {expression3}':' {result3}");
-            Console.WriteLine($"===================================================================");
         }
 
         public static void EvaluateExpression5()
@@ -74,7 +71,6 @@ namespace RND_Playground_Apps.Projects
             var result4 = Eval.Execute<string>(expression4, new { name });
             ValidateExpression(expression4, name);
             Console.WriteLine($"Result of '{expression4}': {result4}");
-            Console.WriteLine($"===================================================================");
         }
 
         public static void EvaluateExpression6()
@@ -84,11 +80,9 @@ namespace RND_Playground_Apps.Projects
             var compiledFunc = Eval.Compile<Func<int, int>>(compiledExpression, "y");
             int result5 = compiledFunc(5);
             Console.WriteLine($"Result of '{result5}");
-            Console.WriteLine($"===================================================================");
 
             int result6 = compiledFunc(10);
             Console.WriteLine($"Result of '{result6}");
-            Console.WriteLine($"===================================================================");
         }
         
 

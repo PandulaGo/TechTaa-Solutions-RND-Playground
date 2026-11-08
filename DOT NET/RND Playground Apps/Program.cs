@@ -1,19 +1,22 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.IdentityModel.Tokens;
-using Google.Apis.Auth;
+//using Microsoft.AspNetCore.Authentication;
+//using Microsoft.IdentityModel.Tokens;
+//using Google.Apis.Auth;
 
 
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+//var builder = WebApplication.CreateBuilder(args);
+//var app = builder.Build();
 
-app.MapGet("/", () => "Hello Pandula Goonetilleke, Welcome to the RND Playground Apps!");
+//app.MapGet("/", () => "Hello Pandula Goonetilleke, Welcome to the RND Playground Apps!");
 
 RND_Playground_Apps.Projects.ValueTypeAndReferenceType.Main();
 RND_Playground_Apps.Projects.Generics.Main();
 RND_Playground_Apps.Projects.Reflection.Main();
 RND_Playground_Apps.Projects.EVALExpression.Main();
+RND_Playground_Apps.Projects.BaseMainGrounds.Main();
 
-var builder = WebApplication.CreateBuilder(args);
+Console.ReadKey();
+
+/*var builder = WebApplication.CreateBuilder(args);
 
 var googleClientId = builder.configuration["Authentication:Google:ClientId"] ?? throw new InvalidOperationException("Google Client ID is missing!");
 
@@ -37,7 +40,7 @@ builder.Services
 builder.Services.AddAuthorization();
 var app = builder.Build();
 
-app.UseAuthentication():
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapGet("", () => "Public endpoint - no login needed.");
@@ -82,6 +85,6 @@ public static async Task<GoogleUser> ValidateGoogleTokenAsync(string idToken, st
         Audience = new[] { clientId }
     });
     return new GoogleUser(payload.Subject, payload.Email, payload.Name, payload.Picture);
-}
+}*/
 
 
